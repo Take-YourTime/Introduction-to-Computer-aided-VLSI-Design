@@ -3,6 +3,9 @@
 *.pptx
 *.ppt
 
+version1_output/
+version2_output/
+
 ICCAD*.pdf
 *guide.pdf
 
