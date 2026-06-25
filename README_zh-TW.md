@@ -1,5 +1,7 @@
 # Introduction to Computer-aided VLSI Design (VLSI設計自動化導論)
 
+> [English](README.md) | [繁體中文]
+
 這份 repo 包含了「
 積體電路電腦輔助設計概論」課程的四次程式實驗。
 以下為各個實驗的題目介紹以及對應的實作方法說明。
