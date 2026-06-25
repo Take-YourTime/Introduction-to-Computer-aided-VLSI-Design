@@ -1,5 +1,7 @@
 # Introduction to Computer-aided VLSI Design
 
+> [English] | [繁體中文](README_zh-TW.md)
+
 This repository contains four programming lab assignments for the "Introduction to Computer-aided VLSI Design" course.
 Below are the topic descriptions and implementation methods for each lab.
 
