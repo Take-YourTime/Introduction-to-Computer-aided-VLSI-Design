@@ -1,0 +1,117 @@
+[ALU Resource]
+- Multiplier: 1
+- Adder/Subtractor: 1
+  1 pick:     R * 0.299 =   (1)
+  2 pick:     G * 0.587 =   (2)
+  3 pick:     R * 0.169 =   (6)     (1) +   (2) =   (4)
+  4 pick:     G * 0.331 =   (7)
+  5 pick:     B *   0.5 =   (8)     (6) +   (7) =   (9)
+  6 pick:     R *   0.5 =  (12)     128 +   (8) =  (10)
+  7 pick:     G * 0.419 =  (13)     (9) -  (10) =     U
+  8 pick:     B * 0.081 =  (14)    (12) -  (13) =  (15)
+  9 pick:     B * 0.114 =   (3)     128 -  (14) =  (16)
+ 10 pick:   (4) +   (3) =     Y
+ 11 pick:  (15) +  (16) =     V
+Total control steps: 11
+
+[ALU Resource]
+- Multiplier: 1
+- Adder/Subtractor: 2
+  1 pick:     R * 0.299 =   (1)
+  2 pick:     G * 0.587 =   (2)
+  3 pick:     R * 0.169 =   (6)     (1) +   (2) =   (4)
+  4 pick:     G * 0.331 =   (7)
+  5 pick:     B *   0.5 =   (8)     (6) +   (7) =   (9)
+  6 pick:     R *   0.5 =  (12)     128 +   (8) =  (10)
+  7 pick:     G * 0.419 =  (13)     (9) -  (10) =     U
+  8 pick:     B * 0.081 =  (14)    (12) -  (13) =  (15)
+  9 pick:     B * 0.114 =   (3)     128 -  (14) =  (16)
+ 10 pick:   (4) +   (3) =     Y    (15) +  (16) =     V
+Total control steps: 10
+
+[ALU Resource]
+- Multiplier: 1
+- Adder/Subtractor: 3
+  1 pick:     R * 0.299 =   (1)
+  2 pick:     G * 0.587 =   (2)
+  3 pick:     R * 0.169 =   (6)     (1) +   (2) =   (4)
+  4 pick:     G * 0.331 =   (7)
+  5 pick:     B *   0.5 =   (8)     (6) +   (7) =   (9)
+  6 pick:     R *   0.5 =  (12)     128 +   (8) =  (10)
+  7 pick:     G * 0.419 =  (13)     (9) -  (10) =     U
+  8 pick:     B * 0.081 =  (14)    (12) -  (13) =  (15)
+  9 pick:     B * 0.114 =   (3)     128 -  (14) =  (16)
+ 10 pick:   (4) +   (3) =     Y    (15) +  (16) =     V
+Total control steps: 10
+
+[ALU Resource]
+- Multiplier: 2
+- Adder/Subtractor: 1
+  1 pick:     R * 0.299 =   (1)       G * 0.587 =   (2)
+  2 pick:     R * 0.169 =   (6)       G * 0.331 =   (7)     (1) +   (2) =   (4)
+  3 pick:     B *   0.5 =   (8)       R *   0.5 =  (12)     (6) +   (7) =   (9)
+  4 pick:     G * 0.419 =  (13)       B * 0.081 =  (14)     128 +   (8) =  (10)
+  5 pick:     B * 0.114 =   (3)    (12) -  (13) =  (15)
+  6 pick:   128 -  (14) =  (16)
+  7 pick:   (9) -  (10) =     U
+  8 pick:   (4) +   (3) =     Y
+  9 pick:  (15) +  (16) =     V
+Total control steps: 9
+
+[ALU Resource]
+- Multiplier: 2
+- Adder/Subtractor: 2
+  1 pick:     R * 0.299 =   (1)       G * 0.587 =   (2)
+  2 pick:     R * 0.169 =   (6)       G * 0.331 =   (7)     (1) +   (2) =   (4)
+  3 pick:     B *   0.5 =   (8)       R *   0.5 =  (12)     (6) +   (7) =   (9)
+  4 pick:     G * 0.419 =  (13)       B * 0.081 =  (14)     128 +   (8) =  (10)
+  5 pick:     B * 0.114 =   (3)    (12) -  (13) =  (15)     128 -  (14) =  (16)
+  6 pick:   (9) -  (10) =     U     (4) +   (3) =     Y
+  7 pick:  (15) +  (16) =     V
+Total control steps: 7
+
+[ALU Resource]
+- Multiplier: 2
+- Adder/Subtractor: 3
+  1 pick:     R * 0.299 =   (1)       G * 0.587 =   (2)
+  2 pick:     R * 0.169 =   (6)       G * 0.331 =   (7)     (1) +   (2) =   (4)
+  3 pick:     B *   0.5 =   (8)       R *   0.5 =  (12)     (6) +   (7) =   (9)
+  4 pick:     G * 0.419 =  (13)       B * 0.081 =  (14)     128 +   (8) =  (10)
+  5 pick:     B * 0.114 =   (3)    (12) -  (13) =  (15)     128 -  (14) =  (16)     (9) -  (10) =     U
+  6 pick:   (4) +   (3) =     Y    (15) +  (16) =     V
+Total control steps: 6
+
+[ALU Resource]
+- Multiplier: 3
+- Adder/Subtractor: 1
+  1 pick:     R * 0.299 =   (1)       G * 0.587 =   (2)       R * 0.169 =   (6)
+  2 pick:     G * 0.331 =   (7)       B *   0.5 =   (8)       R *   0.5 =  (12)     (1) +   (2) =   (4)
+  3 pick:     G * 0.419 =  (13)       B * 0.081 =  (14)       B * 0.114 =   (3)     (6) +   (7) =   (9)
+  4 pick:   128 +   (8) =  (10)
+  5 pick:  (12) -  (13) =  (15)
+  6 pick:   128 -  (14) =  (16)
+  7 pick:   (4) +   (3) =     Y
+  8 pick:   (9) -  (10) =     U
+  9 pick:  (15) +  (16) =     V
+Total control steps: 9
+
+[ALU Resource]
+- Multiplier: 3
+- Adder/Subtractor: 2
+  1 pick:     R * 0.299 =   (1)       G * 0.587 =   (2)       R * 0.169 =   (6)
+  2 pick:     G * 0.331 =   (7)       B *   0.5 =   (8)       R *   0.5 =  (12)     (1) +   (2) =   (4)
+  3 pick:     G * 0.419 =  (13)       B * 0.081 =  (14)       B * 0.114 =   (3)     (6) +   (7) =   (9)     128 +   (8) =  (10)
+  4 pick:  (12) -  (13) =  (15)     128 -  (14) =  (16)
+  5 pick:   (4) +   (3) =     Y     (9) -  (10) =     U
+  6 pick:  (15) +  (16) =     V
+Total control steps: 6
+
+[ALU Resource]
+- Multiplier: 3
+- Adder/Subtractor: 3
+  1 pick:     R * 0.299 =   (1)       G * 0.587 =   (2)       R * 0.169 =   (6)
+  2 pick:     G * 0.331 =   (7)       B *   0.5 =   (8)       R *   0.5 =  (12)     (1) +   (2) =   (4)
+  3 pick:     G * 0.419 =  (13)       B * 0.081 =  (14)       B * 0.114 =   (3)     (6) +   (7) =   (9)     128 +   (8) =  (10)
+  4 pick:  (12) -  (13) =  (15)     128 -  (14) =  (16)     (4) +   (3) =     Y
+  5 pick:   (9) -  (10) =     U    (15) +  (16) =     V
+Total control steps: 5
