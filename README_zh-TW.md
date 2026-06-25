@@ -1,4 +1,4 @@
-# Introduction to Computer-aided VLSI Design (VLSI設計自動化導論)
+# 積體電路電腦輔助設計概論
 
 > [English](README.md) | [繁體中文]
 
